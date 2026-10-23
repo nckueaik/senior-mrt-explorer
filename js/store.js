@@ -33,6 +33,11 @@ export function save(state, storage = globalThis.localStorage) {
   return next;
 }
 
+export function clear(storage = globalThis.localStorage) {
+  try { storage.removeItem(KEY); } catch { /* 被封鎖時忽略 */ }
+  return defaultState();
+}
+
 export async function hashPin(pin) {
   const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(`mrt-explorer:${pin}`));
   return [...new Uint8Array(buf)].map(b => b.toString(16).padStart(2, '0')).join('');

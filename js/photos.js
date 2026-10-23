@@ -34,3 +34,4 @@ export async function compress(file, maxSide = 1280, quality = 0.75) {
 export const savePhoto = (id, blob) => tx('readwrite', s => s.put(blob, id));
 export const getPhoto = id => tx('readonly', s => s.get(id)).catch(() => null);
 export const deletePhoto = id => tx('readwrite', s => s.delete(id)).catch(() => null);
+export const clearPhotos = () => tx('readwrite', s => s.clear()).catch(() => null);

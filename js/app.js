@@ -4,7 +4,7 @@ import { candidates, pick, spotFor, REROLLS, NEAR_MAX, FAR_MAX } from './draw.js
 import * as store from './store.js';
 import { speak, stopSpeaking, canSpeak } from './speak.js';
 import { renderMap } from './map.js';
-import { compress, savePhoto, getPhoto, deletePhoto } from './photos.js';
+import { compress, savePhoto, getPhoto, deletePhoto, clearPhotos } from './photos.js';
 
 const app = document.getElementById('app');
 const toolbar = document.getElementById('toolbar');
@@ -286,6 +286,10 @@ const screens = {
         <p>共 ${Object.keys(spots.stations).length} 站內容，其中 <b>${drafts}</b> 站是<span class="tag draft">草稿</span>，請依內容核對清單逐站確認。</p>
         <small>資料整理於 ${esc(spots.checkedAt)}</small>
       </div>
+      <div class="card"><h2 style="margin-top:0">清除所有資料</h2>
+        <p>刪除這支手機上的設定、探險紀錄、徽章與留念照，回到第一次設定的畫面。清除前建議先傳一份備份連結。</p>
+        <button class="danger" data-action="resetAll">🗑️ 清除所有資料</button>
+      </div>
       <button class="ghost" data-action="lock">離開家人設定</button>`;
   },
 
@@ -408,6 +412,16 @@ const actions = {
     render();
   },
   lock: () => { familyUnlocked = false; go('home'); },
+  resetAll: async () => {
+    const n = state.visits.length;
+    if (!confirm(`確定要清除所有資料嗎？
+會刪除設定、${n} 筆探險紀錄、徽章與留念照。`)) return;
+    if (!confirm('再確認一次：清除後無法復原（除非有備份連結）。真的要清除嗎？')) return;
+    await clearPhotos();
+    state = store.clear();
+    familyUnlocked = false;
+    go('setup');
+  },
   delVisit: el => {
     const i = Number(el.dataset.i);
     const v = state.visits[i];
