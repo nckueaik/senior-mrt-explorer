@@ -1,0 +1,277 @@
+{
+ "checkedAt": "2026-10",
+ "note": "第一批 10 站草稿（draft: true）。上線給長輩前，請依 docs/content-review.md 逐項核對，核對完把 draft 改成 false。closedDays：0=週日、1=週一…6=週六。",
+ "stations": {
+  "新莊": {
+   "draft": true,
+   "hint": "三百年前這裡是大港口，老街上的媽祖廟最熱鬧",
+   "spots": [{
+    "id": "xinzhuang-ciyou",
+    "name": "新莊廟街・慈祐宮",
+    "exit": "2 號出口",
+    "elevator": "",
+    "walkMin": 5,
+    "route": "出站後走到新莊路，沿著老街往廟的方向走",
+    "mapQuery": "新莊慈祐宮",
+    "access": "老街路面平坦，但機車多，請走騎樓",
+    "toilet": "廟裡有廁所",
+    "setting": "outdoor",
+    "closedDays": [],
+    "hours": "廟宇白天開放",
+    "fee": "免費",
+    "desc": "新莊以前是淡水河邊的大港口，新莊路一帶就是最早的「廟街」，有慈祐宮、武聖廟、廣福宮、文昌祠四座老廟。\n慈祐宮拜的是媽祖，廟前常有老店賣鹹光餅、草仔粿、芋粿巧，可以邊逛邊吃。",
+    "image": {"src": "img/xinzhuang-ciyou.jpg", "author": "阿道", "license": "CC BY-SA 4.0", "source": "https://commons.wikimedia.org/wiki/File:Xinzhuang_Temple_of_Goddess_of_Mercy-01.2025-01-05.jpg"},
+    "verify": ["新莊站最靠近慈祐宮的出口編號與有無電梯", "步行分鐘", "廟方開放時間"],
+    "sources": ["https://www.thenewslens.com/article/261709"]
+   }],
+   "foods": [
+    {"name": "德旺號（古早味鹹湯圓）", "price": "每人約 100 元內", "where": "慈祐宮前", "hours": "待核對", "closed": "", "phone": "", "note": "廟街老店，2026 年換新招牌", "sources": ["https://www.thenewslens.com/feature/ntpc2025/269703"]},
+    {"name": "老順香糕餅店", "price": "糕餅數十元起", "where": "新莊路老街上", "hours": "待核對", "closed": "", "phone": "", "note": "清同治年間創立的老餅店，適合買點心回家", "sources": ["https://www.thenewslens.com/article/261709"]}
+   ]
+  },
+  "先嗇宮": {
+   "draft": true,
+   "hint": "站名就是這座廟的名字，拜的是教人種田的神明",
+   "spots": [{
+    "id": "xianse-temple",
+    "name": "三重先嗇宮",
+    "exit": "1 號出口",
+    "elevator": "",
+    "walkMin": 5,
+    "route": "出站後往五谷王北街走",
+    "mapQuery": "三重先嗇宮",
+    "access": "路面平坦",
+    "toilet": "廟裡有廁所",
+    "setting": "semi",
+    "closedDays": [],
+    "hours": "每日 05:00–21:30",
+    "fee": "免費",
+    "desc": "先嗇宮是三重最古老的廟，原本叫「五穀先帝廟」，主祀神農大帝，是新北市定古蹟。\n抬頭看看屋頂和藻井，細緻的木雕與剪黏都是老師傅的手藝。",
+    "image": {"src": "img/xianse-temple.jpg", "author": "阿道", "license": "CC BY-SA 4.0", "source": "https://commons.wikimedia.org/wiki/File:Roof_of_the_Sanchong_Xianse_Temple-03.2025-01-22.jpg"},
+    "verify": ["最靠近的出口編號與有無電梯", "步行分鐘（房仲資料 4～8 分鐘不等）"],
+    "sources": ["https://smiletaiwan.cw.com.tw/article/8451"]
+   }],
+   "foods": [
+    {"name": "集美市場小吃", "price": "每人約 100 元內", "where": "三重集美街一帶", "hours": "早上到中午", "closed": "", "phone": "", "note": "傳統市場裡有經營三十年的蚵嗲炸物攤；店家與距離待核對", "sources": ["https://gofunit.com/%e4%b8%89%e9%87%8d%e7%be%8e%e9%a3%9f/"]},
+    {"name": "（待補）先嗇宮附近麵店或飯館", "price": "每人 200 元內", "where": "待核對", "hours": "待核對", "closed": "", "phone": "", "note": "請家人實地找一家有座位、適合長輩的店", "sources": []}
+   ]
+  },
+  "大橋頭": {
+   "draft": true,
+   "hint": "百年老街賣南北貨、中藥和布料，過年最熱鬧",
+   "spots": [{
+    "id": "dihua-street",
+    "name": "大稻埕迪化街",
+    "exit": "1 號出口",
+    "elevator": "",
+    "walkMin": 8,
+    "route": "出站後沿民權西路往西走，到迪化街右轉往南逛",
+    "mapQuery": "迪化街二段",
+    "access": "騎樓有高低差，慢慢走",
+    "toilet": "大稻埕碼頭、永樂市場有公廁",
+    "setting": "semi",
+    "closedDays": [],
+    "hours": "店家多為 09:00–18:00",
+    "fee": "免費",
+    "desc": "迪化街是台北最有名的老街之一，兩旁是清朝到日治時期的老街屋，賣南北貨、中藥材、茶葉和布料。\n一路往南逛可以走到霞海城隍廟，過年前的年貨大街最熱鬧。",
+    "image": {"src": "img/dihua-street.jpg", "author": "Kiyoteru Awaji", "license": "CC BY 4.0", "source": "https://commons.wikimedia.org/wiki/File:DiHua_Street_Sec.1,_Taipei_(at_YongChang_Street).jpg"},
+    "verify": ["出口編號與有無電梯", "走到迪化街北段的分鐘"],
+    "sources": ["https://smiletaiwan.cw.com.tw/article/606"]
+   }],
+   "foods": [
+    {"name": "大橋頭老牌筒仔米糕", "price": "每人約 100 元內", "where": "延平北路三段，大橋頭站附近", "hours": "待核對", "closed": "", "phone": "", "note": "1973 年創立，米其林必比登推介", "sources": ["https://guide.michelin.com/tw/taipei/da-qiao-tou-tube-rice-pudding/restaurant"]},
+    {"name": "賣麵炎仔（金泉小吃）", "price": "每人約 100～150 元", "where": "安西街 106 號", "hours": "07:00–14:30", "closed": "", "phone": "", "note": "必比登推介，紅燒肉 10 點後才有；沒有菜單，跟老闆說人數就好", "sources": ["https://guide.michelin.com/tw/zh_TW/taipei-region/taipei/restaurant/mai-mien-yen-tsai"]}
+   ]
+  },
+  "圓山": {
+   "draft": true,
+   "hint": "白色方塊疊起來的大房子，裡面全是畫和藝術品",
+   "spots": [{
+    "id": "tfam",
+    "name": "臺北市立美術館",
+    "exit": "1 號出口",
+    "elevator": "",
+    "walkMin": 10,
+    "route": "出站後沿中山北路三段往北走，經過花博公園",
+    "mapQuery": "臺北市立美術館",
+    "access": "人行道平坦，館內有電梯",
+    "toilet": "館內有無障礙廁所",
+    "setting": "indoor",
+    "closedDays": [1],
+    "hours": "週二至週日 09:30–17:30（週六延長）",
+    "fee": "65 歲以上免費（帶身分證）",
+    "desc": "北美館是台灣第一座現代美術館，外觀像白色方塊交錯疊起來。\n館內冷氣涼爽、有座位和電梯，下雨天也很適合來。看完可以到旁邊的花博公園散步。",
+    "image": {"src": "img/tfam.jpg", "author": "Yu tptw", "license": "CC BY-SA 4.0", "source": "https://commons.wikimedia.org/wiki/File:Taipei_Fine_Arts_Museum_20230910.jpg"},
+    "verify": ["開放時間與週六延長時段", "65 歲以上免費是否限設籍臺北市（條例版本不一）", "出口有無電梯"],
+    "sources": ["https://www.laws.taipei.gov.tw/Law/File/0000093629"]
+   }],
+   "foods": [
+    {"name": "北美館館內餐飲", "price": "待核對", "where": "美術館內", "hours": "同美術館", "closed": "週一", "phone": "", "note": "不用再走遠；價位請核對是否在 200 元內", "sources": []},
+    {"name": "大龍街一帶小吃", "price": "每人 200 元內", "where": "圓山站西側大龍街", "hours": "待核對", "closed": "", "phone": "", "note": "請家人挑一家固定的店", "sources": []}
+   ]
+  },
+  "士林": {
+   "draft": true,
+   "hint": "以前是總統住的地方，現在花園開放大家賞玫瑰",
+   "spots": [{
+    "id": "shilin-residence",
+    "name": "士林官邸公園",
+    "exit": "2 號出口",
+    "elevator": "",
+    "walkMin": 10,
+    "route": "出站後左轉，沿中山北路五段走，跟著「士林官邸」指標",
+    "mapQuery": "士林官邸公園",
+    "access": "園區步道平坦，有座椅可以休息",
+    "toilet": "園區內有廁所（正館內沒有）",
+    "setting": "outdoor",
+    "closedDays": [],
+    "hours": "公園約 08:00–17:00（展期會延長）",
+    "fee": "公園免費；正館另收費，65 歲以上優待約 50 元",
+    "desc": "士林官邸是蔣中正總統夫婦以前住的地方，現在花園開放給大家參觀。\n玫瑰園、生態園和中式庭園都很漂亮，秋天有菊花展、春天有玫瑰展。",
+    "image": {"src": "img/shilin-residence.jpg", "author": "阿道", "license": "CC BY-SA 4.0", "source": "https://commons.wikimedia.org/wiki/File:Rose_Garden,_Shilin_Official_Residence_02_20251129.jpg"},
+    "verify": ["公園平日開放時間", "正館長者票價", "2 號出口有無電梯"],
+    "sources": ["https://news.tvbs.com.tw/travel/2705584", "https://uptogo.com.tw/旅遊/士林官邸幾號出口？/"]
+   }],
+   "foods": [
+    {"name": "及品鍋貼水餃", "price": "每人約 100 元", "where": "美崙街，士林站附近", "hours": "待核對", "closed": "", "phone": "", "note": "網友評價高的平價鍋貼店", "sources": ["https://supertaste.tvbs.com.tw/infocard/19128"]},
+    {"name": "中正路・華榮市場一帶老店", "price": "每人 200 元內", "where": "士林站西側", "hours": "待核對", "closed": "", "phone": "", "note": "光輝肉羹只有傍晚後營業，不適合午餐", "sources": ["https://supertaste.tvbs.com.tw/infocard/15317"]}
+   ]
+  },
+  "北門": {
+   "draft": true,
+   "hint": "紅磚老房子以前管全台灣的火車，現在是博物館",
+   "spots": [{
+    "id": "railway-dept",
+    "name": "國立臺灣博物館 鐵道部園區",
+    "exit": "1 號出口",
+    "elevator": "",
+    "walkMin": 3,
+    "route": "出站後沿延平北路一段走，入口就在路邊",
+    "mapQuery": "國立臺灣博物館鐵道部園區",
+    "access": "園區平坦，展館有電梯",
+    "toilet": "園區內有廁所",
+    "setting": "indoor",
+    "closedDays": [1],
+    "hours": "週二至週日 09:30–17:00",
+    "fee": "長者約 50 元（全票 100 元）",
+    "desc": "這裡是日治時代管理全台灣鐵路的「鐵道部」，紅磚建築已經一百多年。\n館內有火車模型、老車票和時刻表，很多長輩看了會想起以前坐火車的回憶。",
+    "image": {"src": "img/railway-dept.jpg", "author": "阿道", "license": "CC BY-SA 4.0", "source": "https://commons.wikimedia.org/wiki/File:Building_No._4,_8,_9_of_National_Taiwan_Museum_Railway_Department_Park-02.2024-05-18.jpg"},
+    "verify": ["65 歲以上是否免費或半價", "最近的出口編號與電梯"],
+    "sources": ["https://bunnyann.tw/railway/", "https://gofunit.com/台北博物館推薦/"]
+   }],
+   "foods": [
+    {"name": "鄭記豬腳飯", "price": "每人約 120～150 元", "where": "延平南路 22 號", "hours": "待核對", "closed": "", "phone": "", "note": "經營約 50 年的老店，東坡肉飯、豬腳飯", "sources": ["https://uptogo.com.tw/美食/北門捷運美食/"]},
+    {"name": "福珍排骨酥麵", "price": "每人約 100 元", "where": "華陰街，台北車站後站", "hours": "待核對", "closed": "", "phone": "", "note": "40 多年老店，價格平實", "sources": ["https://uptogo.com.tw/美食/北門捷運美食/"]}
+   ]
+  },
+  "中正紀念堂": {
+   "draft": true,
+   "hint": "藍屋頂白牆的大廣場，每個整點有衛兵交接",
+   "spots": [{
+    "id": "cks-hall",
+    "name": "中正紀念堂",
+    "exit": "5 號出口",
+    "elevator": "",
+    "walkMin": 8,
+    "route": "出站就進到園區，沿著步道走到白色紀念堂",
+    "mapQuery": "中正紀念堂",
+    "access": "園區很大、很平坦；紀念堂前有長階梯，旁邊有電梯",
+    "toilet": "園區與紀念堂內都有廁所",
+    "setting": "semi",
+    "closedDays": [],
+    "hours": "紀念堂 09:00–18:00；園區清晨到晚上",
+    "fee": "免費",
+    "desc": "中正紀念堂有藍色屋頂、白色牆面，前面是很大的自由廣場，兩旁是國家戲劇院和音樂廳。\n紀念堂內每個整點有衛兵交接儀式，園區裡的池塘有很多錦鯉，樹下有長椅可以休息。",
+    "image": {"src": "img/cks-hall.jpg", "author": "AngMoKio", "license": "CC BY-SA 3.0", "source": "https://commons.wikimedia.org/wiki/File:Chiang_Kai-shek_Memorial_Hall_2009_amk.JPG"},
+    "verify": ["衛兵交接目前是否仍在館內舉行", "5 號出口有無電梯", "紀念堂電梯位置"],
+    "sources": ["https://hchs.tp.edu.tw/hujiang/file/ad2/臺北TOP全民國防景點導覽地圖.pdf"]
+   }],
+   "foods": [
+    {"name": "南門市場熟食攤", "price": "每人 200 元內", "where": "2 號出口附近", "hours": "白天", "closed": "週一（待核對）", "phone": "", "note": "2023 年改建重新開幕，老字號攤商多", "sources": ["https://supertaste.tvbs.com.tw/travel/343106"]},
+    {"name": "黃龍莊", "price": "每人約 150～200 元", "where": "牯嶺街，2 號出口步行約 7 分鐘", "hours": "待核對", "closed": "", "phone": "", "note": "小籠湯包、炒飯、牛肉麵", "sources": ["https://news.tvbs.com.tw/travel/3058750"]},
+    {"name": "南門福州傻瓜乾麵", "price": "每人約 100 元", "where": "南昌路一段 59 巷 32 號", "hours": "待核對", "closed": "", "phone": "", "note": "招牌是紅糟炸排骨", "sources": ["https://www.bella.tw/articles/travel&foodies/20198"]}
+   ]
+  },
+  "龍山寺": {
+   "draft": true,
+   "hint": "台北最有名的古廟，從清朝到現在香火不斷",
+   "spots": [{
+    "id": "longshan-temple",
+    "name": "艋舺龍山寺",
+    "exit": "1 號出口",
+    "elevator": "",
+    "walkMin": 3,
+    "route": "出站穿過艋舺公園，對面就是龍山寺",
+    "mapQuery": "艋舺龍山寺",
+    "access": "路面平坦",
+    "toilet": "艋舺公園地下街與寺內有廁所",
+    "setting": "semi",
+    "closedDays": [],
+    "hours": "每日 06:00–22:00",
+    "fee": "免費",
+    "desc": "龍山寺建於清朝乾隆年間，是台北最古老、最有名的廟之一，主祀觀世音菩薩，是國定古蹟。\n屋頂的龍、柱子上的雕刻都很精彩。出寺後往廣州街走，就是有百年老街屋的剝皮寮。",
+    "image": {"src": "img/longshan-temple.jpg", "author": "CEphoto, Uwe Aranas", "license": "CC BY-SA 3.0", "source": "https://commons.wikimedia.org/wiki/File:Taipei_Taiwan_Mengjia-Longshan-Temple-02.jpg"},
+    "verify": ["開放時間", "1 號出口有無電梯"],
+    "sources": ["https://www.bella.tw/articles/travel&foodies/59631/longshan-temple-wanhua-old-shop-pork-congee"]
+   }],
+   "foods": [
+    {"name": "周記肉粥店", "price": "每人約 100 元內", "where": "廣州街 104 號，剝皮寮對面", "hours": "待核對", "closed": "", "phone": "02-2302-5588", "note": "1956 年創立，肉粥配紅燒肉", "sources": ["https://www.bella.tw/articles/travel&foodies/59631/longshan-temple-wanhua-old-shop-pork-congee"]},
+    {"name": "源芳刈包", "price": "每人約 100 元內", "where": "華西街", "hours": "待核對", "closed": "", "phone": "", "note": "60 多年老店，必比登推介", "sources": ["https://www.nownews.com/news/6637398"]}
+   ]
+  },
+  "新北投": {
+   "draft": true,
+   "hint": "公園裡有一棟紅磚木造的老澡堂，現在可以免費參觀",
+   "spots": [{
+    "id": "beitou-museum",
+    "name": "北投溫泉博物館",
+    "exit": "出站後往中山路",
+    "elevator": "",
+    "walkMin": 5,
+    "route": "出站後沿中山路往上走，進北投公園就會看到紅磚老建築",
+    "mapQuery": "北投溫泉博物館",
+    "access": "中山路是緩上坡，慢慢走；館內要脫鞋",
+    "toilet": "北投公園內有公廁",
+    "setting": "indoor",
+    "closedDays": [1],
+    "hours": "週二至週日 09:00–17:00（國定假日開放狀況待核對）",
+    "fee": "免費",
+    "desc": "北投溫泉博物館以前是日治時期的「北投公共浴場」，一樓是羅馬式的大浴池，二樓是榻榻米休息室。\n旁邊就是北投公園和北投圖書館，也可以去看看綠色的木造圖書館。",
+    "image": {"src": "img/beitou-museum.jpg", "author": "FireFeather", "license": "CC BY-SA 4.0", "source": "https://commons.wikimedia.org/wiki/File:Beitou_Hot_Spring_Museum,_Taipei,_Taiwan.jpg"},
+    "verify": ["開放時間（各來源 09:00 或 10:00 開館不一）", "國定假日是否休館", "館內是否有電梯"],
+    "sources": ["https://hotspringmuseum.taipei/storage/manager/北投溫泉博物館探索學習手冊new_compressed.pdf", "https://smiletaiwan.cw.com.tw/article/1370"]
+   }],
+   "foods": [
+    {"name": "丰清揚小吃店", "price": "每人約 100～150 元（炒飯約 70 元起）", "where": "中和街 355 號", "hours": "11:00–14:00、17:00–20:30", "closed": "週二", "phone": "", "note": "部落格資料，距離與營業狀況待核對", "sources": ["https://bunnyann.tw/?p=111787"]},
+    {"name": "北投市場一帶小吃", "price": "每人 200 元內", "where": "北投站附近（回程順路）", "hours": "白天", "closed": "", "phone": "", "note": "可在北投站轉車前吃", "sources": ["https://bunnyann.tw/?p=19320"]}
+   ]
+  },
+  "淡水": {
+   "draft": true,
+   "hint": "坐到紅線最北邊，河邊吹風看夕陽",
+   "spots": [{
+    "id": "tamsui-riverside",
+    "name": "淡水河岸與老街",
+    "exit": "1 號出口",
+    "elevator": "",
+    "walkMin": 3,
+    "route": "出站往河邊走，沿著河岸步道往老街方向散步",
+    "mapQuery": "淡水老街",
+    "access": "河岸步道平坦，有很多長椅",
+    "toilet": "捷運站與河岸步道有公廁",
+    "setting": "outdoor",
+    "closedDays": [],
+    "hours": "全天",
+    "fee": "免費",
+    "desc": "淡水是以前的大港口，河岸步道可以看到對面的觀音山，傍晚的夕陽特別漂亮。\n沿著中正路的老街有阿給、魚丸等小吃，再往前走約 10 分鐘有拜媽祖的福佑宮。",
+    "image": {"src": "img/tamsui-riverside.jpg", "author": "L. Chang - Changlc at English Wikipedia", "license": "Public domain", "source": "https://commons.wikimedia.org/wiki/File:Danshui_waterfront.jpg"},
+    "verify": ["1 號出口有無電梯"],
+    "sources": ["https://bunnyann.tw/freshwater/"]
+   }],
+   "foods": [
+    {"name": "可口魚丸", "price": "每人約 100 元內", "where": "中正路 232 號（老街上）", "hours": "待核對（各來源不一）", "closed": "", "phone": "", "note": "有資料說目前只能外帶，請核對是否有座位", "sources": ["https://bunnyann.tw/freshwater/"]},
+    {"name": "淡水文化阿給", "price": "每人約 100 元內", "where": "真理街 6-4 號", "hours": "平日 06:30–18:00，假日到 19:30", "closed": "", "phone": "", "note": "真理街是上坡，慢慢走", "sources": ["https://gofunit.com/淡水小吃/"]}
+   ]
+  }
+ }
+}
