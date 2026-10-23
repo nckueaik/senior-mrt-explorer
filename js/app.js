@@ -24,6 +24,7 @@ const today = () => {
 };
 const lineChip = line => `<span class="chip" style="background:${network.lines[line].color};color:${network.lines[line].text}">${network.lines[line].name}</span>`;
 const lineShare = text => `https://line.me/R/share?text=${encodeURIComponent(text)}`;
+const mapSearch = query => `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
 const who = () => state.nickname || '我們';
 const minutes = () => (minutesCache[state.homeStation] ||= minutesFrom(network, state.homeStation));
 const stationData = st => spots.stations[st];
@@ -197,7 +198,10 @@ const screens = {
         <b>${esc(f.name)}</b> <span class="tag">${esc(f.price)}</span><br>
         <small>${esc(f.note || '')}</small>
         <p>🚶 ${esc(f.where)}<br>🕘 ${esc(f.hours)}${f.closed ? `（${esc(f.closed)}休）` : ''}${f.phone ? `<br>📞 <a href="tel:${esc(f.phone.replace(/[^\d+]/g, ''))}">${esc(f.phone)}</a>` : ''}</p>
-        <a class="btn ghost" href="${lineShare(`回報：${ip.station}站附近的「${f.name}」今天沒開（${today()}），請幫忙更新。`)}" target="_blank" rel="noopener" data-food="${i}">這家今天沒開（回報）</a>
+        <div class="stack">
+          ${f.mapQuery ? `<a class="btn" href="${mapSearch(f.mapQuery)}" target="_blank" rel="noopener">🗺️ 用 Google 地圖找這家</a>` : ''}
+          <a class="btn ghost" href="${lineShare(`回報：${ip.station}站附近的「${f.name}」今天沒開（${today()}），請幫忙更新。`)}" target="_blank" rel="noopener" data-food="${i}">這家今天沒開（回報）</a>
+        </div>
       </div>`).join('');
     return `<div class="celebrate reveal">🎉</div>
       <h1 style="text-align:center">${esc(s.name)}</h1>

@@ -25,8 +25,8 @@
     "sources": ["https://www.thenewslens.com/article/261709"]
    }],
    "foods": [
-    {"name": "德旺號（古早味鹹湯圓）", "price": "每人約 100 元內", "where": "慈祐宮前", "hours": "待核對", "closed": "", "phone": "", "note": "廟街老店，2026 年換新招牌", "sources": ["https://www.thenewslens.com/feature/ntpc2025/269703"]},
-    {"name": "老順香糕餅店", "price": "糕餅數十元起", "where": "新莊路老街上", "hours": "待核對", "closed": "", "phone": "", "note": "清同治年間創立的老餅店，適合買點心回家", "sources": ["https://www.thenewslens.com/article/261709"]}
+    {"name": "德旺號（古早味鹹湯圓）", "mapQuery": "新莊 德旺號 鹹湯圓", "price": "每人約 100 元內", "where": "慈祐宮前", "hours": "待核對", "closed": "", "phone": "", "note": "廟街老店，2026 年換新招牌", "sources": ["https://www.thenewslens.com/feature/ntpc2025/269703"]},
+    {"name": "老順香糕餅店", "mapQuery": "老順香餅店 新莊", "price": "糕餅數十元起", "where": "新莊路老街上", "hours": "待核對", "closed": "", "phone": "", "note": "清同治年間創立的老餅店，適合買點心回家", "sources": ["https://www.thenewslens.com/article/261709"]}
    ]
   },
   "先嗇宮": {
@@ -52,7 +52,7 @@
     "sources": ["https://smiletaiwan.cw.com.tw/article/8451"]
    }],
    "foods": [
-    {"name": "集美市場小吃", "price": "每人約 100 元內", "where": "三重集美街一帶", "hours": "早上到中午", "closed": "", "phone": "", "note": "傳統市場裡有經營三十年的蚵嗲炸物攤；店家與距離待核對", "sources": ["https://gofunit.com/%e4%b8%89%e9%87%8d%e7%be%8e%e9%a3%9f/"]},
+    {"name": "集美市場小吃", "mapQuery": "三重集美市場", "price": "每人約 100 元內", "where": "三重集美街一帶", "hours": "早上到中午", "closed": "", "phone": "", "note": "傳統市場裡有經營三十年的蚵嗲炸物攤；店家與距離待核對", "sources": ["https://gofunit.com/%e4%b8%89%e9%87%8d%e7%be%8e%e9%a3%9f/"]},
     {"name": "（待補）先嗇宮附近麵店或飯館", "price": "每人 200 元內", "where": "待核對", "hours": "待核對", "closed": "", "phone": "", "note": "請家人實地找一家有座位、適合長輩的店", "sources": []}
    ]
   },
@@ -79,8 +79,8 @@
     "sources": ["https://smiletaiwan.cw.com.tw/article/606"]
    }],
    "foods": [
-    {"name": "大橋頭老牌筒仔米糕", "price": "每人約 100 元內", "where": "延平北路三段，大橋頭站附近", "hours": "待核對", "closed": "", "phone": "", "note": "1973 年創立，米其林必比登推介", "sources": ["https://guide.michelin.com/tw/taipei/da-qiao-tou-tube-rice-pudding/restaurant"]},
-    {"name": "賣麵炎仔（金泉小吃）", "price": "每人約 100～150 元", "where": "安西街 106 號", "hours": "07:00–14:30", "closed": "", "phone": "", "note": "必比登推介，紅燒肉 10 點後才有；沒有菜單，跟老闆說人數就好", "sources": ["https://guide.michelin.com/tw/zh_TW/taipei-region/taipei/restaurant/mai-mien-yen-tsai"]}
+    {"name": "大橋頭老牌筒仔米糕", "mapQuery": "大橋頭老牌筒仔米糕", "price": "每人約 100 元內", "where": "延平北路三段，大橋頭站附近", "hours": "待核對", "closed": "", "phone": "", "note": "1973 年創立，米其林必比登推介", "sources": ["https://guide.michelin.com/tw/taipei/da-qiao-tou-tube-rice-pudding/restaurant"]},
+    {"name": "賣麵炎仔（金泉小吃）", "mapQuery": "賣麵炎仔 安西街106號", "price": "每人約 100～150 元", "where": "安西街 106 號", "hours": "07:00–14:30", "closed": "", "phone": "", "note": "必比登推介，紅燒肉 10 點後才有；沒有菜單，跟老闆說人數就好", "sources": ["https://guide.michelin.com/tw/zh_TW/taipei-region/taipei/restaurant/mai-mien-yen-tsai"]}
    ]
   },
   "圓山": {
@@ -106,8 +106,8 @@
     "sources": ["https://www.laws.taipei.gov.tw/Law/File/0000093629"]
    }],
    "foods": [
-    {"name": "北美館館內餐飲", "price": "待核對", "where": "美術館內", "hours": "同美術館", "closed": "週一", "phone": "", "note": "不用再走遠；價位請核對是否在 200 元內", "sources": []},
-    {"name": "大龍街一帶小吃", "price": "每人 200 元內", "where": "圓山站西側大龍街", "hours": "待核對", "closed": "", "phone": "", "note": "請家人挑一家固定的店", "sources": []}
+    {"name": "北美館館內餐飲", "mapQuery": "臺北市立美術館 餐廳", "price": "待核對", "where": "美術館內", "hours": "同美術館", "closed": "週一", "phone": "", "note": "不用再走遠；價位請核對是否在 200 元內", "sources": []},
+    {"name": "大龍街一帶小吃", "mapQuery": "大龍街 小吃", "price": "每人 200 元內", "where": "圓山站西側大龍街", "hours": "待核對", "closed": "", "phone": "", "note": "請家人挑一家固定的店", "sources": []}
    ]
   },
   "士林": {
@@ -133,8 +133,8 @@
     "sources": ["https://news.tvbs.com.tw/travel/2705584", "https://uptogo.com.tw/旅遊/士林官邸幾號出口？/"]
    }],
    "foods": [
-    {"name": "及品鍋貼水餃", "price": "每人約 100 元", "where": "美崙街，士林站附近", "hours": "待核對", "closed": "", "phone": "", "note": "網友評價高的平價鍋貼店", "sources": ["https://supertaste.tvbs.com.tw/infocard/19128"]},
-    {"name": "中正路・華榮市場一帶老店", "price": "每人 200 元內", "where": "士林站西側", "hours": "待核對", "closed": "", "phone": "", "note": "光輝肉羹只有傍晚後營業，不適合午餐", "sources": ["https://supertaste.tvbs.com.tw/infocard/15317"]}
+    {"name": "及品鍋貼水餃", "mapQuery": "及品鍋貼水餃 士林", "price": "每人約 100 元", "where": "美崙街，士林站附近", "hours": "待核對", "closed": "", "phone": "", "note": "網友評價高的平價鍋貼店", "sources": ["https://supertaste.tvbs.com.tw/infocard/19128"]},
+    {"name": "中正路・華榮市場一帶老店", "mapQuery": "士林 華榮市場", "price": "每人 200 元內", "where": "士林站西側", "hours": "待核對", "closed": "", "phone": "", "note": "光輝肉羹只有傍晚後營業，不適合午餐", "sources": ["https://supertaste.tvbs.com.tw/infocard/15317"]}
    ]
   },
   "北門": {
@@ -160,8 +160,8 @@
     "sources": ["https://bunnyann.tw/railway/", "https://gofunit.com/台北博物館推薦/"]
    }],
    "foods": [
-    {"name": "鄭記豬腳飯", "price": "每人約 120～150 元", "where": "延平南路 22 號", "hours": "待核對", "closed": "", "phone": "", "note": "經營約 50 年的老店，東坡肉飯、豬腳飯", "sources": ["https://uptogo.com.tw/美食/北門捷運美食/"]},
-    {"name": "福珍排骨酥麵", "price": "每人約 100 元", "where": "華陰街，台北車站後站", "hours": "待核對", "closed": "", "phone": "", "note": "40 多年老店，價格平實", "sources": ["https://uptogo.com.tw/美食/北門捷運美食/"]}
+    {"name": "鄭記豬腳飯", "mapQuery": "鄭記豬腳飯 延平南路22號", "price": "每人約 120～150 元", "where": "延平南路 22 號", "hours": "待核對", "closed": "", "phone": "", "note": "經營約 50 年的老店，東坡肉飯、豬腳飯", "sources": ["https://uptogo.com.tw/美食/北門捷運美食/"]},
+    {"name": "福珍排骨酥麵", "mapQuery": "福珍排骨酥麵 華陰街", "price": "每人約 100 元", "where": "華陰街，台北車站後站", "hours": "待核對", "closed": "", "phone": "", "note": "40 多年老店，價格平實", "sources": ["https://uptogo.com.tw/美食/北門捷運美食/"]}
    ]
   },
   "中正紀念堂": {
@@ -187,9 +187,9 @@
     "sources": ["https://hchs.tp.edu.tw/hujiang/file/ad2/臺北TOP全民國防景點導覽地圖.pdf"]
    }],
    "foods": [
-    {"name": "南門市場熟食攤", "price": "每人 200 元內", "where": "2 號出口附近", "hours": "白天", "closed": "週一（待核對）", "phone": "", "note": "2023 年改建重新開幕，老字號攤商多", "sources": ["https://supertaste.tvbs.com.tw/travel/343106"]},
-    {"name": "黃龍莊", "price": "每人約 150～200 元", "where": "牯嶺街，2 號出口步行約 7 分鐘", "hours": "待核對", "closed": "", "phone": "", "note": "小籠湯包、炒飯、牛肉麵", "sources": ["https://news.tvbs.com.tw/travel/3058750"]},
-    {"name": "南門福州傻瓜乾麵", "price": "每人約 100 元", "where": "南昌路一段 59 巷 32 號", "hours": "待核對", "closed": "", "phone": "", "note": "招牌是紅糟炸排骨", "sources": ["https://www.bella.tw/articles/travel&foodies/20198"]}
+    {"name": "南門市場熟食攤", "mapQuery": "南門市場", "price": "每人 200 元內", "where": "2 號出口附近", "hours": "白天", "closed": "週一（待核對）", "phone": "", "note": "2023 年改建重新開幕，老字號攤商多", "sources": ["https://supertaste.tvbs.com.tw/travel/343106"]},
+    {"name": "黃龍莊", "mapQuery": "黃龍莊 牯嶺街", "price": "每人約 150～200 元", "where": "牯嶺街，2 號出口步行約 7 分鐘", "hours": "待核對", "closed": "", "phone": "", "note": "小籠湯包、炒飯、牛肉麵", "sources": ["https://news.tvbs.com.tw/travel/3058750"]},
+    {"name": "南門福州傻瓜乾麵", "mapQuery": "南門福州傻瓜乾麵 南昌路一段59巷32號", "price": "每人約 100 元", "where": "南昌路一段 59 巷 32 號", "hours": "待核對", "closed": "", "phone": "", "note": "招牌是紅糟炸排骨", "sources": ["https://www.bella.tw/articles/travel&foodies/20198"]}
    ]
   },
   "龍山寺": {
@@ -215,8 +215,8 @@
     "sources": ["https://www.bella.tw/articles/travel&foodies/59631/longshan-temple-wanhua-old-shop-pork-congee"]
    }],
    "foods": [
-    {"name": "周記肉粥店", "price": "每人約 100 元內", "where": "廣州街 104 號，剝皮寮對面", "hours": "待核對", "closed": "", "phone": "02-2302-5588", "note": "1956 年創立，肉粥配紅燒肉", "sources": ["https://www.bella.tw/articles/travel&foodies/59631/longshan-temple-wanhua-old-shop-pork-congee"]},
-    {"name": "源芳刈包", "price": "每人約 100 元內", "where": "華西街", "hours": "待核對", "closed": "", "phone": "", "note": "60 多年老店，必比登推介", "sources": ["https://www.nownews.com/news/6637398"]}
+    {"name": "周記肉粥店", "mapQuery": "周記肉粥店 廣州街104號", "price": "每人約 100 元內", "where": "廣州街 104 號，剝皮寮對面", "hours": "待核對", "closed": "", "phone": "02-2302-5588", "note": "1956 年創立，肉粥配紅燒肉", "sources": ["https://www.bella.tw/articles/travel&foodies/59631/longshan-temple-wanhua-old-shop-pork-congee"]},
+    {"name": "源芳刈包", "mapQuery": "源芳刈包 華西街", "price": "每人約 100 元內", "where": "華西街", "hours": "待核對", "closed": "", "phone": "", "note": "60 多年老店，必比登推介", "sources": ["https://www.nownews.com/news/6637398"]}
    ]
   },
   "新北投": {
@@ -242,8 +242,8 @@
     "sources": ["https://hotspringmuseum.taipei/storage/manager/北投溫泉博物館探索學習手冊new_compressed.pdf", "https://smiletaiwan.cw.com.tw/article/1370"]
    }],
    "foods": [
-    {"name": "丰清揚小吃店", "price": "每人約 100～150 元（炒飯約 70 元起）", "where": "中和街 355 號", "hours": "11:00–14:00、17:00–20:30", "closed": "週二", "phone": "", "note": "部落格資料，距離與營業狀況待核對", "sources": ["https://bunnyann.tw/?p=111787"]},
-    {"name": "北投市場一帶小吃", "price": "每人 200 元內", "where": "北投站附近（回程順路）", "hours": "白天", "closed": "", "phone": "", "note": "可在北投站轉車前吃", "sources": ["https://bunnyann.tw/?p=19320"]}
+    {"name": "丰清揚小吃店", "mapQuery": "丰清揚小吃店 北投 中和街355號", "price": "每人約 100～150 元（炒飯約 70 元起）", "where": "中和街 355 號", "hours": "11:00–14:00、17:00–20:30", "closed": "週二", "phone": "", "note": "部落格資料，距離與營業狀況待核對", "sources": ["https://bunnyann.tw/?p=111787"]},
+    {"name": "北投市場一帶小吃", "mapQuery": "北投市場", "price": "每人 200 元內", "where": "北投站附近（回程順路）", "hours": "白天", "closed": "", "phone": "", "note": "可在北投站轉車前吃", "sources": ["https://bunnyann.tw/?p=19320"]}
    ]
   },
   "淡水": {
@@ -269,8 +269,8 @@
     "sources": ["https://bunnyann.tw/freshwater/"]
    }],
    "foods": [
-    {"name": "可口魚丸", "price": "每人約 100 元內", "where": "中正路 232 號（老街上）", "hours": "待核對（各來源不一）", "closed": "", "phone": "", "note": "有資料說目前只能外帶，請核對是否有座位", "sources": ["https://bunnyann.tw/freshwater/"]},
-    {"name": "淡水文化阿給", "price": "每人約 100 元內", "where": "真理街 6-4 號", "hours": "平日 06:30–18:00，假日到 19:30", "closed": "", "phone": "", "note": "真理街是上坡，慢慢走", "sources": ["https://gofunit.com/淡水小吃/"]}
+    {"name": "可口魚丸", "mapQuery": "可口魚丸 淡水 中正路232號", "price": "每人約 100 元內", "where": "中正路 232 號（老街上）", "hours": "待核對（各來源不一）", "closed": "", "phone": "", "note": "有資料說目前只能外帶，請核對是否有座位", "sources": ["https://bunnyann.tw/freshwater/"]},
+    {"name": "淡水文化阿給", "mapQuery": "淡水文化阿給 真理街", "price": "每人約 100 元內", "where": "真理街 6-4 號", "hours": "平日 06:30–18:00，假日到 19:30", "closed": "", "phone": "", "note": "真理街是上坡，慢慢走", "sources": ["https://gofunit.com/淡水小吃/"]}
    ]
   }
  }

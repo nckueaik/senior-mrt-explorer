@@ -1,6 +1,6 @@
 // 離線快取：頁面與資料「先網路後快取」（有網路就拿最新），圖片「先快取」。
 // 安裝時預先下載所有景點圖片，讓長輩在地下站沒訊號也看得到。
-const CACHE = 'mrt-explorer-v3'; // 更新程式或資料時改版本號
+const CACHE = 'mrt-explorer-v5'; // 更新程式或資料時改版本號
 const CORE = [
   './', 'index.html', 'manifest.webmanifest', 'css/app.css',
   'js/app.js', 'js/route.js', 'js/fare.js', 'js/draw.js', 'js/store.js', 'js/speak.js', 'js/map.js', 'js/photos.js',

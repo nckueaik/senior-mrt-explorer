@@ -42,6 +42,7 @@ def main():
                 f"- [ ] 美食：{f['name']}（{f['price']}）",
                 f"  - [ ] 地點：{f['where']}；營業：{f['hours']}；公休：{f['closed'] or '待核對'}；電話：{f['phone'] or '待核對'}",
                 "  - [ ] 有座位、適合長輩、每人 200 元內、步行 10 分鐘內",
+                f"  - [ ] Google 地圖搜尋「{f['mapQuery']}」找得到正確的店" if f.get("mapQuery") else "  - [ ] 補上 mapQuery（Google 地圖搜尋字串）",
             ]
             for src in f.get("sources", []):
                 out.append(f"  - 參考：{src}")
