@@ -120,7 +120,7 @@ const screens = {
     const ip = state.inProgress;
     const advice = timeAdvice();
     return `<div class="top"><h1>${esc(who())}的捷運探險</h1><button class="gear" data-action="family" aria-label="家人設定">⚙️</button></div>
-      <div class="card"><p>已經探險 <b>${state.visits.length}</b> 次（第 ${state.round} 輪）</p>
+      <div class="card"><p>已經探險 <b>${state.visits.length}</b> 次（第 ${Number(state.round) || 1} 輪）</p>
       <p class="points">本月探險約用 ${used} / ${MONTHLY_POINTS} 點</p><small>實際扣點以刷卡紀錄為準</small></div>
       ${advice ? `<div class="hint">${advice}</div>` : ''}
       <div class="stack" style="margin-top:16px">
@@ -161,7 +161,7 @@ const screens = {
       <div class="stack" style="margin-top:16px">
         <a class="btn" href="${lineShare(departMsg)}" target="_blank" rel="noopener">💬 用 LINE 告訴家人出發了</a>
         <button class="primary big" data-action="arriveStation">🚉 我到站了</button>
-        ${ip.rerollsLeft > 0 ? `<button data-action="reroll">換一個（還可以換 ${ip.rerollsLeft} 次）</button>` : ''}
+        ${ip.rerollsLeft > 0 ? `<button data-action="reroll">換一個（還可以換 ${Number(ip.rerollsLeft)} 次）</button>` : ''}
         <button class="ghost" data-action="home">改天再去（先保留）</button>
         <button class="ghost" data-action="abandon">不去這站了</button>
       </div>`;
@@ -181,10 +181,11 @@ const screens = {
         ${s.toilet ? `<p>🚻 ${esc(s.toilet)}</p>` : ''}
         ${s.hours ? `<p>🕘 ${esc(s.hours)}</p>` : ''}
         <p>🎫 ${esc(s.fee)}</p>
+        <a class="btn nav" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(s.mapQuery || s.name)}&travelmode=walking&dir_action=navigate">🧭 Google 導航走過去</a>
+        <small>出站後再按，跟著手機的語音和箭頭走。</small>
       </div>
       <div class="stack">
         <a class="btn" href="${lineShare(`${who()}已經到捷運${ip.station}站了。`)}" target="_blank" rel="noopener">💬 用 LINE 報平安</a>
-        <a class="btn ghost" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(s.mapQuery || s.name)}&travelmode=walking">🗺️ 用 Google 地圖走過去</a>
         <button class="primary big" data-action="arriveSpot">📍 我到了</button>
         <button class="ghost" data-action="back" data-to="drawn">回上一步</button>
       </div>`;
@@ -492,6 +493,7 @@ async function init() {
   [network, fares, layout, spots] = await Promise.all(['data/network.json', 'data/fares.json', 'data/map-layout.json', 'data/spots.json'].map(get));
   // 家站改變或內容移除時，清掉無效的進行中探險
   if (state.inProgress && !spots.stations[state.inProgress.station]) commit({ ...state, inProgress: null });
+  if (!fares.stations.includes(state.homeStation)) commit({ ...state, homeStation: '丹鳳' });
 
   const m = location.hash.match(/^#restore=(.+)$/);
   if (m) {

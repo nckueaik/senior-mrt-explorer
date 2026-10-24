@@ -134,7 +134,7 @@ await test('全部去過 → roundComplete；下一輪用第二個景點', () =>
 await test('備份連結編碼後還原一致，且不含 PIN', async () => {
   const s = { ...defaultState(), pinHash: 'secret', nickname: '阿嬤', visits: [visit('淡水')], updatedAt: 5 };
   const back = await decodeBackup(await encodeBackup(s));
-  eq(back.visits, s.visits);
+  eq(back.visits.map(v => [v.station, v.date, v.round]), [['淡水', '2026-10-01', 1]]);
   eq(back.nickname, '阿嬤');
   ok(!('pinHash' in back), 'PIN 不應在備份');
 });
@@ -148,6 +148,18 @@ await test('徽章：有內容的站全部去過才解鎖該線', () => {
   const { fresh } = awardBadges(state, network, ['淡水', '圓山', '動物園'], '2026-10-23');
   ok(fresh.some(b => b.id === 'line-R'), '應解鎖淡水信義線');
   ok(!fresh.some(b => b.id === 'line-BR'), '文湖線不應解鎖');
+});
+
+await test('被竄改的備份連結：數字欄位擋掉程式碼、電話只留數字', async () => {
+  const evil = { ...defaultState(), round: '<img src=x onerror=alert(1)>', familyPhone: '"><script>x</script>09',
+    visits: [{ station: '淡水', date: '<b>', round: 'x', photoId: 'javascript:1' }, 'junk'],
+    inProgress: { station: '淡水', stage: '<x>', rerollsLeft: '<svg onload=1>' }, badges: [{ id: 'a', label: 1 }] };
+  const back = await decodeBackup(await encodeBackup(evil));
+  eq(back.round, 1);
+  eq(back.familyPhone, '09');
+  eq(back.visits, [{ station: '淡水', spot: '', spotName: '', date: '', round: 1, points: 0, photoId: null }]);
+  eq([back.inProgress.stage, back.inProgress.rerollsLeft], ['drawn', 0]);
+  eq(back.badges, [{ id: 'a', label: '', date: '' }]);
 });
 
 // ---------- 輸出 ----------

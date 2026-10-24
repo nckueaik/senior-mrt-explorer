@@ -63,7 +63,48 @@ export async function decodeBackup(code) {
   const bytes = await pipe(fromB64url(code), new DecompressionStream('deflate-raw'));
   const data = JSON.parse(new TextDecoder().decode(bytes));
   if (data?.v !== 1 || !Array.isArray(data.visits)) throw new Error('備份格式不正確');
-  return data;
+  return sanitize(data);
+}
+
+// 備份連結可能被別人改過：只留下認得的欄位，並限制型別與長度
+const int = (v, min, max, dflt) => (Number.isInteger(v) && v >= min && v <= max ? v : dflt);
+const str = (v, max) => (typeof v === 'string' ? v.slice(0, max) : '');
+const isDate = v => typeof v === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(v);
+
+export function sanitize(d) {
+  const ip = d.inProgress;
+  return {
+    v: 1,
+    setupDone: true,
+    homeStation: str(d.homeStation, 20) || '丹鳳',
+    nickname: str(d.nickname, 20),
+    familyPhone: str(d.familyPhone, 200).replace(/[^\d+\-() ]/g, '').slice(0, 20),
+    round: int(d.round, 1, 999, 1),
+    visits: d.visits.filter(v => typeof v?.station === 'string').map(v => ({
+      station: str(v.station, 20),
+      spot: str(v.spot, 60),
+      spotName: str(v.spotName, 60),
+      date: isDate(v.date) ? v.date : '',
+      round: int(v.round, 1, 999, 1),
+      points: int(v.points, 0, 999, 0),
+      photoId: typeof v.photoId === 'string' && /^p\d+$/.test(v.photoId) ? v.photoId : null,
+    })),
+    inProgress: typeof ip?.station === 'string' ? {
+      station: str(ip.station, 20),
+      stage: ['drawn', 'atStation', 'arrived'].includes(ip.stage) ? ip.stage : 'drawn',
+      rerollsLeft: int(ip.rerollsLeft, 0, 2, 0),
+      offered: (Array.isArray(ip.offered) ? ip.offered : []).filter(x => typeof x === 'string').slice(0, 5),
+      mode: ip.mode === 'far' ? 'far' : 'near',
+      indoorOnly: ip.indoorOnly === true,
+      relaxed: ip.relaxed === true,
+      drawnAt: isDate(ip.drawnAt) ? ip.drawnAt : '',
+    } : null,
+    pointsMonth: typeof d.pointsMonth?.ym === 'string' && /^\d{4}-\d{2}$/.test(d.pointsMonth.ym)
+      ? { ym: d.pointsMonth.ym, used: int(d.pointsMonth.used, 0, 99999, 0) } : null,
+    badges: (Array.isArray(d.badges) ? d.badges : []).filter(b => typeof b?.id === 'string')
+      .map(b => ({ id: str(b.id, 30), label: str(b.label, 30), date: isDate(b.date) ? b.date : '' })),
+    updatedAt: Number.isFinite(d.updatedAt) ? d.updatedAt : 0,
+  };
 }
 
 export function backupUrl(code, base = location.href) {
